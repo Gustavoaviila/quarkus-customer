@@ -25,6 +25,10 @@ public class CustomerService {
     return customers;
   }
 
+  public CustomerDTO findCustomerById(Long id){
+    return mapCustomerEntityToDTO(repository.findById(id));
+  }
+
   public void create(CustomerDTO customerDTO){
     repository.persist(mapCustomerDTOToEntity(customerDTO));
   }

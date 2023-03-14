@@ -13,13 +13,10 @@ import lombok.extern.jackson.Jacksonized;
 @NoArgsConstructor
 public class CustomerDTO {
 
+  private Long id;
   private String name;
-
   private String phone;
-
   private String email;
-
   private String address;
-
   private Long age;
 }
